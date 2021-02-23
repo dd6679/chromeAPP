@@ -1,6 +1,7 @@
 const form = document.querySelector(".js-form"),
     input = form.querySelector("input"),
-    greeting = document.querySelector(".js-greetings");
+    greeting = document.querySelector(".js-greetings"),
+    toDoGreeting = document.querySelector(".js-toDoGreetings");
 
 const USER_LS = "currentUser",
     SHOWING_CN = "showing";
@@ -25,6 +26,7 @@ function paintGreeting(text) {
     form.classList.remove(SHOWING_CN);
     greeting.classList.add(SHOWING_CN);
     greeting.innerText = `Hello ${text}`;
+    toDoGreeting.innerText = `${text}'s To Do`;
 }
 
 function loadName() {

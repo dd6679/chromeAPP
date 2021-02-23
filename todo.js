@@ -31,7 +31,7 @@ function paintToDo(text) {
     const del = document.createElement("button");
     const span = document.createElement("span");
     const newId = toDos.length + 1;
-    del.innerText = "X";
+    del.innerText = "x";
     del.addEventListener("click", delToDo);
     span.innerText = text;
     //넣는곳.appendChild(넣을것)
