@@ -27,6 +27,7 @@ function paintGreeting(text) {
     greeting.classList.add(SHOWING_CN);
     greeting.innerText = `Hello ${text}`;
     toDoGreeting.innerText = `${text}'s To Do`;
+    document.getElementById("todoform").style.display='inline';
 }
 
 function loadName() {
